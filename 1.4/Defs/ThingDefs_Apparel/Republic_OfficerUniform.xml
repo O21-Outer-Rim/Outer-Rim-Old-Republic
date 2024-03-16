@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OuterRim_UniformBodyFabricatedBase">
+		<defName>OuterRim_OldRepublicOfficerUniform</defName>
+		<label>republic officer uniform</label>
+		<description>A durable utalitarian uniform used by officers of the Republic.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/RepublicOfficer/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_OldRepublicArmory</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<tags Inherit="False">
+				<li>OldRepublicOfficer</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/RepublicOfficer/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255, 255, 255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>OuterRim_ApparelOldRepublic</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef ParentName="OuterRim_UniformHeadwearFabricatedBase">
+		<defName>OuterRim_OldRepublicOfficerCap</defName>
+		<label>republic officer cap</label>
+		<description>A durable utalitarian uniform used by officers of the Republic.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/RepublicOfficer/Head</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_OldRepublicArmory</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<bodyPartGroups Inherit="False">
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<tags Inherit="False">
+				<li>OldRepublicOfficer</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/RepublicOfficer/Head</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255, 255, 255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>OuterRim_ApparelOldRepublic</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+</Defs>

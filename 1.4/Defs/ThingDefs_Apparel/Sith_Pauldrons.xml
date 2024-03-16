@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="OuterRim_MediumPauldronsFabricatedBase">
+		<defName>OuterRim_SithTrooperPauldrons</defName>
+		<label>sith trooper pauldrons</label>
+		<description>Armoured pauldrons used by the Sith Empire Troopers.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/SithTrooperPauldrons/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(220, 220, 220)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_SithEmpireArmory</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<tags Inherit="False">
+				<li>SithEmpireApparel</li>
+				<li>SithEmpireTrooper</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/SithTrooperPauldrons/Apparel</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(220, 220, 220)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>OuterRim_ApparelSithEmpire</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="OuterRim_MediumHelmetFabricatedBase">
+		<defName>OuterRim_OldRepublicTrooperHelmet</defName>
+		<label>republic trooper helmet</label>
+		<description>An armoured helmet used by the Republic Troopers.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/RepublicTrooper/Head</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(220, 220, 220)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_OldRepublicArmory</researchPrerequisite>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.4</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<apparel>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			<tags Inherit="False">
+				<li>OldRepublicApparel</li>
+				<li>OldRepublicTrooper</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/RepublicTrooper/Head</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(220, 220, 220)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>OuterRim_ApparelOldRepublic</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+</Defs>

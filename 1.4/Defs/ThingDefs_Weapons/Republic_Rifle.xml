@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OuterRimBlasterBase_Rifle">
+		<defName>OuterRim_OldRepublicRifle</defName>
+		<label>republic blaster rifle</label>
+		<description>A mid range blaster rifle provided as standard issue to troops in the Republic.</description>
+		<graphicData>
+			<texPath>OuterRim/Weapons/RepublicRifle</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_OldRepublicArmory</researchPrerequisite>
+		</recipeMaker>
+		<weaponTags>
+			<li>OROldRepublicAny</li>
+			<li>OROldRepublicStandard</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OuterRim_OldRepublicWeapons</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OuterRim_Bullet_RifleRed</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>36</range>
+				<ticksBetweenBurstShots>18</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>OuterRim_Shot_MediumBlasterBolt</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+</Defs>

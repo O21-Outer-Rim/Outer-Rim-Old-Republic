@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ScenarioDef>
+		<defName>OuterRim_OldRepublicStart</defName>
+		<label>Old Republic Troopers</label>
+		<description>The four of you arrive on this world, raw recruits sent to establish a self sufficient outpost as part of a new long term strategy. New recruits will be sent to you regularly.\n\nNote: Super easy due to research and equipment handed to you.</description>
+		<scenario>
+			<summary>One Officer and three Troopers aligned with the Republic.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>OuterRim_OldRepublicPlayerFaction</factionDef>
+			</playerFaction>
+			<parts>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+					<def>ConfigurePawnsKindDefs</def>
+					<pawnChoiceCount>8</pawnChoiceCount>
+					<leftBehindPawnKind>OuterRim_OldRepublicTrooper_PlayerNoHelmet</leftBehindPawnKind>
+					<kindCounts>
+						<li>
+							<kindDef>OuterRim_OldRepublicOfficer_Player</kindDef>
+							<count>1</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+						<li>
+							<kindDef>OuterRim_OldRepublicTrooper_PlayerNoHelmet</kindDef>
+							<count>3</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+					</kindCounts>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>DropPods</method>
+				</li>
+				<li Class="TabulaRasa.ScenPart_ReinforcementJoins">
+					<def>TabulaRasa_ReinforcementJoins</def>
+					<intervalDays>14</intervalDays>
+					<repeat>True</repeat>
+					<pawnKind>OuterRim_OldRepublicTrooper_PlayerRecruit</pawnKind>
+					<arrivalMode>DropPods</arrivalMode>
+					<faction>OuterRim_OldRepublic</faction>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>800</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>50</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_KoltoGelPack</thingDef>
+					<count>25</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_OldRepublicTrooperHelmet</thingDef>
+					<count>3</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_OldRepublicBlaster</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_OldRepublicRifle</thingDef>
+					<count>3</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>45</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_ComponentHypertech</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_ResearchCore_OldRepublic</thingDef>
+					<count>1</count>
+				</li>
+				<!-- <li Class="ScenPart_StartingThing_Defined" MayRequire="Neronix17.OuterRim.DroidDepot">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_MSEDroidPlatform</thingDef>
+					<count>1</count>
+				</li> -->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>450</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>300</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipChunk</thingDef>
+					<count>7</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>200</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>OuterRim_Durasteel</thingDef>
+					<count>600</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>OuterRim_OldRepublicArmory</project>
+				</li>
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text />
+					<textKey>GameStartDialog</textKey>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+				<!-- <li Class="KCSG.ScenPart_AddStartingStructure">
+					<def>VFEC_AddStartingStructure</def>
+					<structureLabel>A small Imperial outpost with basic equipment and defences.</structureLabel>
+					<nearMapCenter>True</nearMapCenter>
+					<chooseFrom>
+						<li>OuterRim_Starter_ImperialOutpostA</li>
+					</chooseFrom>
+				</li> -->
+				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+					<def>VFEC_ForcedFactionGoodwill</def>
+					<factionDef>OuterRim_OldRepublic</factionDef>
+					<affectStartingGoodwill>True</affectStartingGoodwill>
+					<startingGoodwillRange>100~100</startingGoodwillRange>
+				</li>
+				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+					<def>VFEC_ForcedFactionGoodwill</def>
+					<factionDef>OuterRim_SithEmpire</factionDef>
+					<affectStartingGoodwill>True</affectStartingGoodwill>
+					<startingGoodwillRange>-100~-100</startingGoodwillRange>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+</Defs>

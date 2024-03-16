@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OuterRimBlasterBase_Pistol">
+		<defName>OuterRim_SithBlaster</defName>
+		<label>sith blaster</label>
+		<description>A mid range blaster pistol provided as standard issue to troops in the Sith Empire.</description>
+		<graphicData>
+			<texPath>OuterRim/Weapons/SithPistol</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_SithEmpireArmory</researchPrerequisite>
+		</recipeMaker>
+		<weaponTags>
+			<li>ORSithEmpireAny</li>
+			<li>ORSithEmpireLight</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OuterRim_SithEmpireWeapons</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OuterRim_Bullet_PistolGreen</defaultProjectile>
+				<warmupTime>0.6</warmupTime>
+				<range>24</range>
+				<soundCast>OuterRim_Shot_BlasterBolt</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OuterRimBlasterBase_HeavyWeapon">
+		<defName>OuterRim_OldRepublicHeavyRifle</defName>
+		<label>republic heavy rifle</label>
+		<description>A powerful short range blaster rifle provided as standard issue to heavy troops in the Republic.</description>
+		<graphicData>
+			<texPath>OuterRim/Weapons/RepublicHeavyRifle</texPath>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.64</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.45</AccuracyLong>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_OldRepublicArmory</researchPrerequisite>
+		</recipeMaker>
+		<weaponTags>
+			<li>OROldRepublicAny</li>
+			<li>OROldRepublicStandard</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OuterRim_OldRepublicWeapons</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OuterRim_Bullet_RifleRed</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>30</range>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<burstShotCount>4</burstShotCount>
+				<soundCast>OuterRim_Shot_AltHeavyBlasterBolt</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+</Defs>

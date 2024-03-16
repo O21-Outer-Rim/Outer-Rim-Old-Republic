@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OuterRimBlasterBase_Pistol">
+		<defName>OuterRim_OldRepublicBlaster</defName>
+		<label>republic blaster</label>
+		<description>A mid range blaster pistol provided as standard issue to troops in the Republic.</description>
+		<graphicData>
+			<texPath>OuterRim/Weapons/RepublicPistol</texPath>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_OldRepublicArmory</researchPrerequisite>
+		</recipeMaker>
+		<weaponTags>
+			<li>OROldRepublicAny</li>
+			<li>OROldRepublicLight</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OuterRim_OldRepublicWeapons</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OuterRim_Bullet_PistolRed</defaultProjectile>
+				<warmupTime>0.6</warmupTime>
+				<range>24</range>
+				<soundCast>OuterRim_Shot_BlasterBolt</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+</Defs>
