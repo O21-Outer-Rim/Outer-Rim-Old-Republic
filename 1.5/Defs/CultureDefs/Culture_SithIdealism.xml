@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<CultureDef>
+		<defName>OuterRim_CultureSithIdealism</defName>
+		<label>sith idealism</label>
+		<description>The culture of the Sith Empire</description>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">OuterRim_IdeoSithIdealism</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">OuterRim_DeitySithIdealism</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">OuterRim_DeityTypeMakerSithIdealism</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">OuterRim_LeaderTitleMakerSithIdealism</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">OuterRim_NamerFestivalSithIdealism</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OuterRim_OriginRepublic</li>
+		</allowedPlaceTags>
+		<iconPath>OuterRim/Icons/SithIcon</iconPath>
+		<iconColor>(0.8, 0.8, 0.8)</iconColor>
+		<thingStyleCategories>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>OuterRim_StyleSithIdealism</category>
+				<priority>2</priority>
+			</li> -->
+		</thingStyleCategories>
+		<styleItemTags>
+			<li>
+				<tag>Urban</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardRural</tag>
+				<baseWeight>0.1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardUrban</tag>
+				<baseWeight>0.2</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_CultureExtended">
+				<ideoIconDef>OuterRim_SithEmpire</ideoIconDef>
+			</li>
+		</modExtensions>
+	</CultureDef>
+
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>OuterRim_IdeoSithIdealism</defName>
+		<rulePack>
+			<rulesStrings>
+				<!-- From symbol pack -->
+				<li>r_ideoName->Sith</li>
+				<li>r_ideoAdjective->Sith</li>
+				<li>r_memberName->sith</li>
+
+				<!-- Generic content -->
+				<li>globalAdjective->Galactic</li>
+				<li>globalAdjective->New</li>
+				<li>globalAdjective->True</li>
+				<li>globalAdjective->Reformed</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>OuterRim_DeitySithIdealism</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityName->Revan</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>OuterRim_DeityTypeMakerSithIdealism</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityType->Revanchist</li>
+
+				<li>god->revanchist</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>OuterRim_LeaderTitleMakerSithIdealism</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_leaderTitle->dark lord</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>OuterRim_NamerFestivalSithIdealism</defName>
+		<include>
+			<li>NamerFestivalGlobal</li>
+		</include>
+	</RulePackDef>
+
+</Defs>

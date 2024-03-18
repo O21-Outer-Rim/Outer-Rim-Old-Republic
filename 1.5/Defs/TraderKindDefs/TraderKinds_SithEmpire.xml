@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<TraderKindDef ParentName="OuterRim_TraderBaseBase">
+		<defName>OuterRim_SithEmpire_Base</defName>
+		<faction>OuterRim_SithEmpire</faction>
+		<stockGenerators>
+			<!-- Weapons -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>OuterRim_SithEmpireWeapons</tradeTag>
+				<thingDefCountRange>3~4</thingDefCountRange>
+				<countRange>3~6</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>OuterRim_ResearchCore_SithEmpire</thingDef>
+				<countRange>-1~1</countRange>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+
+	<TraderKindDef ParentName="OuterRim_TraderCaravanBase">
+		<defName>OuterRim_SithEmpire_Carvan</defName>
+		<faction>OuterRim_SithEmpire</faction>
+		<stockGenerators>
+			<!-- Weapons -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>OuterRim_SithEmpireWeapons</tradeTag>
+				<thingDefCountRange>3~4</thingDefCountRange>
+				<countRange>3~6</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>OuterRim_ResearchCore_SithEmpire</thingDef>
+				<countRange>-1~1</countRange>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+
+	<TraderKindDef ParentName="OuterRim_TraderVisitorBase">
+		<defName>OuterRim_SithEmpire_Visitor</defName>
+		<faction>OuterRim_SithEmpire</faction>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>OuterRim_ResearchCore_SithEmpire</thingDef>
+				<countRange>-1~1</countRange>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+
+</Defs>

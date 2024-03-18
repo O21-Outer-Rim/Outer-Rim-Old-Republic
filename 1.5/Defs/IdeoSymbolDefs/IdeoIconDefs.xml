@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<IdeoIconDef>
+		<defName>OuterRim_SithEmpire</defName>
+		<iconPath>OuterRim/Icons/SithIcon</iconPath>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
+		<defName>OuterRim_OldRepublic</defName>
+		<iconPath>OuterRim/Icons/OldRepublicIcon</iconPath>
+	</IdeoIconDef>
+
+</Defs>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="OuterRim_MediumHelmetFabricatedBase">
+		<defName>OuterRim_SithTrooperHelmet</defName>
+		<label>sith trooper helmet</label>
+		<description>An armoured helmet used by the Sith Empire Troopers.</description>
+		<graphicData>
+			<texPath>OuterRim/Apparel/SithTrooper/Head</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(220, 220, 220)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>OuterRim_SithEmpireArmory</researchPrerequisite>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.4</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<apparel>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			<tags Inherit="False">
+				<li>SithEmpireApparel</li>
+				<li>SithEmpireTrooper</li>
+			</tags>
+			<wornGraphicPath>OuterRim/Apparel/SithTrooper/Head</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(220, 220, 220)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>OuterRim_ApparelSithEmpire</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+</Defs>
