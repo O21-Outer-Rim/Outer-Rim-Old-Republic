@@ -8,9 +8,6 @@
 		<graphicData>
 			<texPath>OuterRim/Weapons/SithPistol</texPath>
 		</graphicData>
-		<recipeMaker>
-			<researchPrerequisite>OuterRim_SithEmpireArmory</researchPrerequisite>
-		</recipeMaker>
 		<weaponTags>
 			<li>ORSithEmpireAny</li>
 			<li>ORSithEmpireLight</li>

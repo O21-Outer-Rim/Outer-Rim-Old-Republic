@@ -10,9 +10,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<color>(220, 220, 220)</color>
 		</graphicData>
-		<recipeMaker>
-			<researchPrerequisite>OuterRim_SithEmpireArmory</researchPrerequisite>
-		</recipeMaker>
 		<apparel>
 			<tags Inherit="False">
 				<li>SithEmpireApparel</li>

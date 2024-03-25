@@ -8,9 +8,6 @@
 		<graphicData>
 			<texPath>OuterRim/Weapons/RepublicPistol</texPath>
 		</graphicData>
-		<recipeMaker>
-			<researchPrerequisite>OuterRim_OldRepublicArmory</researchPrerequisite>
-		</recipeMaker>
 		<weaponTags>
 			<li>OROldRepublicAny</li>
 			<li>OROldRepublicLight</li>

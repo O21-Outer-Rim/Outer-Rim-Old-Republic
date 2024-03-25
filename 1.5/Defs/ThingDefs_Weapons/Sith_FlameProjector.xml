@@ -19,9 +19,6 @@
 			<DeteriorationRate>0</DeteriorationRate>
 			<Flammability>0</Flammability>
 		</statBases>
-		<recipeMaker>
-			<researchPrerequisite>OuterRim_SithEmpireArmory</researchPrerequisite>
-		</recipeMaker>
 		<weaponTags>
 			<li>ORSithEmpireAny</li>
 			<li>ORSithEmpireHeavyFire</li>

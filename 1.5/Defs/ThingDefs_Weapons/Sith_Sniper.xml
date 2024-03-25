@@ -10,9 +10,6 @@
 			<drawSize>1.1</drawSize>	
 		</graphicData>
 		<equippedAngleOffset>45</equippedAngleOffset>
-		<recipeMaker>
-			<researchPrerequisite>OuterRim_SithEmpireArmory</researchPrerequisite>
-		</recipeMaker>
 		<weaponTags>
 			<li>ORSithEmpireAny</li>
 			<li>ORSithEmpireSniper</li>
