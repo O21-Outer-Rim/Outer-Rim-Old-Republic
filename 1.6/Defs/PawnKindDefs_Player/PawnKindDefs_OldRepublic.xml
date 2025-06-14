@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<PawnKindDef ParentName="OuterRim_BaseColonyPawnKind">
+		<defName>OuterRim_OldRepublicOfficer_Player</defName>
+		<label>republic officer</label>
+		<race>Human</race>
+		<defaultFactionType>OuterRim_OldRepublicPlayerFaction</defaultFactionType>
+		
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>OROldRepublicAny</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelTags Inherit="False">
+			<li>ORBodysuit</li>
+			<li>OldRepublicOfficer</li>
+			<li>ORThermalDetBelt</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_OldRepublicOfficerUniform</li>
+			<li>OuterRim_OldRepublicOfficerCap</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_BaseColonyPawnKind">
+		<defName>OuterRim_OldRepublicTrooper_PlayerNoHelmet</defName>
+		<label>republic trooper</label>
+		<race>Human</race>
+		<defaultFactionType>OuterRim_SithPlayerFaction</defaultFactionType>
+		
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>OROldRepublicAny</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelTags Inherit="False">
+			<li>ORBodysuit</li>
+			<li>OldRepublicTrooper</li>
+			<li>ORThermalDetBelt</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_Bodysuit</li>
+			<li>OuterRim_OldRepublicTrooperCuirass</li>
+			<li>OuterRim_OldRepublicTrooperPauldrons</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_BaseColonyPawnKind">
+		<defName>OuterRim_OldRepublicTrooper_PlayerRecruit</defName>
+		<label>republic trooper</label>
+		<race>Human</race>
+		<defaultFactionType>OuterRim_SithPlayerFaction</defaultFactionType>
+		
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>OROldRepublicAny</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags Inherit="False">
+			<li>ORBodysuit</li>
+			<li>OldRepublicTrooper</li>
+			<li>ORThermalDetBelt</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_Bodysuit</li>
+			<li>OuterRim_OldRepublicTrooperCuirass</li>
+			<li>OuterRim_OldRepublicTrooperPauldrons</li>
+			<li>OuterRim_OldRepublicTrooperHelmet</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+</Defs>

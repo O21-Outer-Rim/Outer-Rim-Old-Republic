@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<CultureDef>
+		<defName>OuterRim_CultureRepublicLaw</defName>
+		<label>republic law</label>
+		<description>The culture of the Republic</description>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">OuterRim_IdeoRepublicLaw</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">OuterRim_DeityRepublicLaw</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">OuterRim_DeityTypeMakerRepublicLaw</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">OuterRim_LeaderTitleMakerRepublicLaw</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">OuterRim_NamerFestivalRepublicLaw</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OuterRim_OriginRepublic</li>
+		</allowedPlaceTags>
+		<iconPath>OuterRim/Icons/OldRepublicIcon</iconPath>
+		<iconColor>(0.8, 0.8, 0.8)</iconColor>
+		<thingStyleCategories>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>OuterRim_StyleRepublicLaw</category>
+				<priority>2</priority>
+			</li> -->
+		</thingStyleCategories>
+		<styleItemTags>
+			<li>
+				<tag>Urban</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardRural</tag>
+				<baseWeight>0.1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardUrban</tag>
+				<baseWeight>0.2</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_CultureExtended">
+				<ideoIconDef>OuterRim_OldRepublic</ideoIconDef>
+			</li>
+		</modExtensions>
+	</CultureDef>
+
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>OuterRim_IdeoRepublicLaw</defName>
+		<rulePack>
+			<rulesStrings>
+				<!-- From symbol pack -->
+				<li>r_ideoName->Republic</li>
+				<li>r_ideoAdjective->Republic</li>
+				<li>r_memberName->republic</li>
+
+				<!-- Generic content -->
+				<li>globalAdjective->Galactic</li>
+				<li>globalAdjective->New</li>
+				<li>globalAdjective->True</li>
+				<li>globalAdjective->Reformed</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>OuterRim_DeityRepublicLaw</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityName->The Force</li>
+				<li>r_deityName->Revan</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>OuterRim_DeityTypeMakerRepublicLaw</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityType->the force</li>
+				<li>r_deityType->Revanchist</li>
+
+				<li>god->the force</li>
+				<li>god->revanchist</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>OuterRim_LeaderTitleMakerRepublicLaw</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_leaderTitle->senator</li>
+				<li>r_leaderTitle->dark lord</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>OuterRim_NamerFestivalRepublicLaw</defName>
+		<include>
+			<li>NamerFestivalGlobal</li>
+		</include>
+	</RulePackDef>
+
+</Defs>

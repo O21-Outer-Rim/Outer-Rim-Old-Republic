@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<PawnKindDef ParentName="OuterRim_BaseColonyPawnKind">
+		<defName>OuterRim_SithOfficer_Player</defName>
+		<label>sith officer</label>
+		<race>Human</race>
+		<defaultFactionType>OuterRim_SithPlayerFaction</defaultFactionType>
+		
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORSithEmpireAny</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelTags Inherit="False">
+			<li>ORBodysuit</li>
+			<li>SithEmpireOfficer</li>
+			<li>ORThermalDetBelt</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_SithOfficerUniform</li>
+			<li>OuterRim_SithOfficerCap</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_BaseColonyPawnKind">
+		<defName>OuterRim_SithTrooper_PlayerNoHelmet</defName>
+		<label>sith trooper</label>
+		<race>Human</race>
+		<defaultFactionType>OuterRim_SithPlayerFaction</defaultFactionType>
+		
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORSithEmpireAny</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelTags Inherit="False">
+			<li>ORBodysuit</li>
+			<li>SithEmpireTrooper</li>
+			<li>ORThermalDetBelt</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_Bodysuit</li>
+			<li>OuterRim_SithTrooperCuirass</li>
+			<li>OuterRim_SithTrooperPauldrons</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_BaseColonyPawnKind">
+		<defName>OuterRim_SithTrooper_PlayerRecruit</defName>
+		<label>sith trooper</label>
+		<race>Human</race>
+		<defaultFactionType>OuterRim_SithPlayerFaction</defaultFactionType>
+		
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORSithEmpireAny</li>
+		</weaponTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags Inherit="False">
+			<li>ORBodysuit</li>
+			<li>SithEmpireTrooper</li>
+			<li>ORThermalDetBelt</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OuterRim_Bodysuit</li>
+			<li>OuterRim_SithTrooperCuirass</li>
+			<li>OuterRim_SithTrooperPauldrons</li>
+			<li>OuterRim_SithTrooperHelmet</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+</Defs>

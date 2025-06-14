@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="OuterRim_ColonyBase">
+		<defName>OuterRim_OldRepublicPlayerFaction</defName>
+		<label>Republic Outpost</label>
+		<description>Your own community.</description>
+		<basicMemberKind>OuterRim_OldRepublicTrooper_PlayerNoHelmet</basicMemberKind>
+		<pawnsPlural>troopers</pawnsPlural>
+	</FactionDef>
+
+</Defs>

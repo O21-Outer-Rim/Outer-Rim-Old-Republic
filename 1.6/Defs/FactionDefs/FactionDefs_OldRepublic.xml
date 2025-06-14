@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>OuterRim_OldRepublic</defName>
+		<label>Old Republic</label>
+		<description>The Galactic Republic was a representative democracy, composed of various star systems, sectors and member worlds throughout most of the known galaxy. Its central government consisted of three branches: legislative, executive and judicial. The first was the Galactic Senate, a body of elected or appointed representatives. Its main duties included mediating disputes over issues ranging from planetary to galactic-scale, regulating trade routes between star systems, and in theory, represented the interests of Republic citizens.</description>
+		<pawnsPlural>Republic Troops</pawnsPlural>
+		<settlementGenerationWeight>0.3</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<earliestRaidDays>35</earliestRaidDays>
+		<canMakeRandomly>true</canMakeRandomly>
+		<basicMemberKind>OuterRim_OldRepublicTrooper</basicMemberKind>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>Commander</leaderTitle>
+		<fixedLeaderKinds>
+			<li>OuterRim_OldRepublicCommander</li>
+		</fixedLeaderKinds>
+		<permanentEnemy>false</permanentEnemy>
+		<permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer>
+		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+		<fixedName>Old Republic</fixedName>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<techLevel>Ultra</techLevel>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.95</commonality>
+			</li>
+		</backstoryFilters>
+		<visitorTraderKinds>
+			<li>OuterRim_OldRepublic_Visitor</li>
+		</visitorTraderKinds>
+		<caravanTraderKinds>
+			<li>OuterRim_OldRepublic_Carvan</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>OuterRim_OldRepublic_Base</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>
+			<min>-50</min>
+			<max>45</max>
+		</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<OuterRim_OldRepublicOfficer>1</OuterRim_OldRepublicOfficer>
+					<OuterRim_OldRepublicCaptain>5</OuterRim_OldRepublicCaptain>
+					<OuterRim_OldRepublicIncinerator>3</OuterRim_OldRepublicIncinerator>
+					<OuterRim_OldRepublicTrooper>20</OuterRim_OldRepublicTrooper>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<OuterRim_OldRepublicCaptain>5</OuterRim_OldRepublicCaptain>
+					<OuterRim_OldRepublicOfficer>3</OuterRim_OldRepublicOfficer>
+					<OuterRim_OldRepublicTrooper>10</OuterRim_OldRepublicTrooper>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<OuterRim_OldRepublicTrader>1</OuterRim_OldRepublicTrader>
+				</traders>
+				<carriers>
+					<Muffalo>4</Muffalo>
+				</carriers>
+				<guards>
+					<OuterRim_OldRepublicOfficer>1</OuterRim_OldRepublicOfficer>
+					<OuterRim_OldRepublicCaptain>5</OuterRim_OldRepublicCaptain>
+					<OuterRim_OldRepublicIncinerator>3</OuterRim_OldRepublicIncinerator>
+					<OuterRim_OldRepublicTrooper>20</OuterRim_OldRepublicTrooper>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<OuterRim_OldRepublicCommander>1</OuterRim_OldRepublicCommander>
+					<OuterRim_OldRepublicOfficer>1</OuterRim_OldRepublicOfficer>
+					<OuterRim_OldRepublicCaptain>5</OuterRim_OldRepublicCaptain>
+					<OuterRim_OldRepublicIncinerator>3</OuterRim_OldRepublicIncinerator>
+					<OuterRim_OldRepublicTrooper>20</OuterRim_OldRepublicTrooper>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<factionIconPath>OuterRim/Icons/OldRepublicIcon</factionIconPath>
+		<colorSpectrum>
+			<li>RGB(218, 188, 105)</li>
+		</colorSpectrum>
+		<allowedCultures>
+			<li>OuterRim_CultureRepublicLaw</li>
+		</allowedCultures>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology, Neronix17.OuterRim.HokeyReligions">OuterRim_MemeBendu</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+		</requiredMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Disapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raiding_Respected</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raiding_Required</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_None</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_ExtremelySlow</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOrSocial</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredRavenous</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredStrong</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Preferred</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Disapproved</li>
+		</disallowedPrecepts>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>30</configurationListOrderPriority>
+	</FactionDef>
+
+</Defs>
