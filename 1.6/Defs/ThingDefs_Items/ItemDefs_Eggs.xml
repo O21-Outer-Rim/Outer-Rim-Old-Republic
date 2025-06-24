@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>OuterRim_EggGizkaUnfertilized</defName>
+		<label>gizka egg (unfert.)</label>
+		<description>Unfertilized Gizka egg.</description>
+		<graphicData>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>3</MarketValue>
+		</statBases>
+	</ThingDef>
+
 	<ThingDef ParentName="EggFertBase">
 		<defName>OuterRim_EggGizkaFertilized</defName>
 		<label>gizka egg (fert.)</label>
@@ -9,7 +21,7 @@
 			<color>(245,245,245)</color>
 		</graphicData>
 		<statBases>
-			<MarketValue>6</MarketValue>
+			<MarketValue>3</MarketValue>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
