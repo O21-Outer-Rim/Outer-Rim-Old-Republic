@@ -65,7 +65,15 @@
 				<options>
 					<OuterRim_SithEmpireOfficer>1</OuterRim_SithEmpireOfficer>
 					<OuterRim_SithCaptain>5</OuterRim_SithCaptain>
-					<OuterRim_SithIncinerator>3</OuterRim_SithIncinerator>
+					<OuterRim_SithTrooper>20</OuterRim_SithTrooper>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<OuterRim_SithEmpireOfficer>1</OuterRim_SithEmpireOfficer>
+					<OuterRim_SithCaptain>5</OuterRim_SithCaptain>
+					<OuterRim_SithIncinerator>2</OuterRim_SithIncinerator>
 					<OuterRim_SithTrooper>20</OuterRim_SithTrooper>
 				</options>
 			</li>
@@ -88,7 +96,6 @@
 				<guards>
 					<OuterRim_SithEmpireOfficer>1</OuterRim_SithEmpireOfficer>
 					<OuterRim_SithCaptain>5</OuterRim_SithCaptain>
-					<OuterRim_SithIncinerator>3</OuterRim_SithIncinerator>
 					<OuterRim_SithTrooper>20</OuterRim_SithTrooper>
 				</guards>
 			</li>
@@ -98,7 +105,7 @@
 					<OuterRim_SithCommander>1</OuterRim_SithCommander>
 					<OuterRim_SithEmpireOfficer>1</OuterRim_SithEmpireOfficer>
 					<OuterRim_SithCaptain>5</OuterRim_SithCaptain>
-					<OuterRim_SithIncinerator>3</OuterRim_SithIncinerator>
+					<OuterRim_SithIncinerator>2</OuterRim_SithIncinerator>
 					<OuterRim_SithTrooper>20</OuterRim_SithTrooper>
 				</options>
 			</li>

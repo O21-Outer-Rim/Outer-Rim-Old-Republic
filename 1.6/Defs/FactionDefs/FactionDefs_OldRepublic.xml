@@ -65,7 +65,15 @@
 				<options>
 					<OuterRim_OldRepublicOfficer>1</OuterRim_OldRepublicOfficer>
 					<OuterRim_OldRepublicCaptain>5</OuterRim_OldRepublicCaptain>
-					<OuterRim_OldRepublicIncinerator>3</OuterRim_OldRepublicIncinerator>
+					<OuterRim_OldRepublicTrooper>20</OuterRim_OldRepublicTrooper>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<OuterRim_OldRepublicOfficer>1</OuterRim_OldRepublicOfficer>
+					<OuterRim_OldRepublicCaptain>5</OuterRim_OldRepublicCaptain>
+					<OuterRim_OldRepublicIncinerator>2</OuterRim_OldRepublicIncinerator>
 					<OuterRim_OldRepublicTrooper>20</OuterRim_OldRepublicTrooper>
 				</options>
 			</li>
@@ -88,7 +96,6 @@
 				<guards>
 					<OuterRim_OldRepublicOfficer>1</OuterRim_OldRepublicOfficer>
 					<OuterRim_OldRepublicCaptain>5</OuterRim_OldRepublicCaptain>
-					<OuterRim_OldRepublicIncinerator>3</OuterRim_OldRepublicIncinerator>
 					<OuterRim_OldRepublicTrooper>20</OuterRim_OldRepublicTrooper>
 				</guards>
 			</li>
@@ -98,7 +105,7 @@
 					<OuterRim_OldRepublicCommander>1</OuterRim_OldRepublicCommander>
 					<OuterRim_OldRepublicOfficer>1</OuterRim_OldRepublicOfficer>
 					<OuterRim_OldRepublicCaptain>5</OuterRim_OldRepublicCaptain>
-					<OuterRim_OldRepublicIncinerator>3</OuterRim_OldRepublicIncinerator>
+					<OuterRim_OldRepublicIncinerator>2</OuterRim_OldRepublicIncinerator>
 					<OuterRim_OldRepublicTrooper>20</OuterRim_OldRepublicTrooper>
 				</options>
 			</li>
